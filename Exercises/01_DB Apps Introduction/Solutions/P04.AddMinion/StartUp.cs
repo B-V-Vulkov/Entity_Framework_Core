@@ -32,6 +32,7 @@
 
 
                     Console.WriteLine(villianId);
+                    Console.WriteLine();
                 }
             }
         }
