@@ -458,9 +458,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P03_MinionNames\\P03_MinionNames.csproj",
-      "projectName": "P03_MinionNames",
-      "projectPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P03_MinionNames\\P03_MinionNames.csproj",
+      "projectUniqueName": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P03_MinionNames\\P03.MinionNames.csproj",
+      "projectName": "P03.MinionNames",
+      "projectPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P03_MinionNames\\P03.MinionNames.csproj",
       "packagesPath": "C:\\Users\\vulko\\.nuget\\packages\\",
       "outputPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P03_MinionNames\\obj\\",
       "projectStyle": "PackageReference",

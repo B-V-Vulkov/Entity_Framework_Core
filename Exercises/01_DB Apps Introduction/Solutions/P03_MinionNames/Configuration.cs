@@ -1,4 +1,4 @@
-﻿namespace P03_MinionNames
+﻿namespace P03.MinionNames
 {
     public static class Configuration
     {

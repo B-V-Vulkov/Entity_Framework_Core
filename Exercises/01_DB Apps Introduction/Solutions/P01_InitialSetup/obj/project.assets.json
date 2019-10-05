@@ -458,9 +458,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P01_InitialSetup\\P01_InitialSetup.csproj",
-      "projectName": "P01_InitialSetup",
-      "projectPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P01_InitialSetup\\P01_InitialSetup.csproj",
+      "projectUniqueName": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P01_InitialSetup\\P01.InitialSetup.csproj",
+      "projectName": "P01.InitialSetup",
+      "projectPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P01_InitialSetup\\P01.InitialSetup.csproj",
       "packagesPath": "C:\\Users\\vulko\\.nuget\\packages\\",
       "outputPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P01_InitialSetup\\obj\\",
       "projectStyle": "PackageReference",

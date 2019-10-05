@@ -458,9 +458,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P02_VillainNames\\P02_VillainNames.csproj",
-      "projectName": "P02_VillainNames",
-      "projectPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P02_VillainNames\\P02_VillainNames.csproj",
+      "projectUniqueName": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P02_VillainNames\\P02.VillainNames.csproj",
+      "projectName": "P02.VillainNames",
+      "projectPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P02_VillainNames\\P02.VillainNames.csproj",
       "packagesPath": "C:\\Users\\vulko\\.nuget\\packages\\",
       "outputPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\01_DB Apps Introduction\\Solutions\\P02_VillainNames\\obj\\",
       "projectStyle": "PackageReference",
