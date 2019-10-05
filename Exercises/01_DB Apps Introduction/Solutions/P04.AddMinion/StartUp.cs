@@ -33,6 +33,7 @@
 
                     Console.WriteLine(villianId);
                     Console.WriteLine();
+                    Console.WriteLine();
                 }
             }
         }
