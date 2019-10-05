@@ -1,4 +1,4 @@
-﻿namespace P02_VillainNames
+﻿namespace P02.VillainNames
 {
     using System;
     using System.Data.SqlClient;

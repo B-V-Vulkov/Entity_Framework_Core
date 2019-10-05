@@ -1,4 +1,4 @@
-﻿namespace P02_VillainNames
+﻿namespace P02.VillainNames
 {
     public static class Configuration
     {

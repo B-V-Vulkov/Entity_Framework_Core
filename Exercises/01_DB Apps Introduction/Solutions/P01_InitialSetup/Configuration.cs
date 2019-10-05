@@ -1,4 +1,4 @@
-﻿namespace P01_InitialSetup
+﻿namespace P01.InitialSetup
 {
     public static class Configuration
     {
