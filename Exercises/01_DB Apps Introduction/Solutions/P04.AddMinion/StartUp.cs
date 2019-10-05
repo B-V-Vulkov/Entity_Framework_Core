@@ -23,8 +23,6 @@
                 connection.ConnectionString = Configuration.CoonnectionString;
                 connection.Open();
 
-                bool isNotExist = false;
-
                 int? townId = GetTownByName(connection, minionTown);
                 if (townId == null)
                 {
@@ -32,35 +30,26 @@
                     Console.WriteLine($"Town {minionTown} was added to the database.");
                 }
 
+                AddMinion(connection, minionName, minionAge, townId);
+                int? minionId = GetMinionIdByName(connection, minionName);
+
                 int? villianId = GetVillainByName(connection, villianName);
                 if (villianId == null)
                 {
                     AddVillian(connection, villianName);
                     Console.WriteLine($"Villain {villianName} was added to the database.");
                     villianId = GetVillainByName(connection, villianName);
-                    isNotExist = true;
                 }
 
-                int? minionId = GetMinionIdByName(connection, minionName);
-                if (minionId == null)
+                string insetrMinionVillian = "INSERT INTO MinionsVillains (MinionId, VillainId) VALUES (@villainId, @minionId)";
+
+                using (SqlCommand command = new SqlCommand(insetrMinionVillian, connection))
                 {
-                    AddMinion(connection, minionName, minionAge, townId);
-                    minionId = GetMinionIdByName(connection, minionName);
-                    isNotExist = true;
-                }
+                    command.Parameters.AddWithValue("@villainId", villianId);
+                    command.Parameters.AddWithValue("@minionId", minionId);
+                    command.ExecuteNonQuery();
 
-                if (isNotExist)
-                {
-                    string insetrMinionVillian = "INSERT INTO MinionsVillains (MinionId, VillainId) VALUES (@villainId, @minionId)";
-
-                    using (SqlCommand command = new SqlCommand(insetrMinionVillian, connection))
-                    {
-                        command.Parameters.AddWithValue("@villainId", villianId);
-                        command.Parameters.AddWithValue("@minionId", minionId);
-                        command.ExecuteNonQuery();
-
-                        Console.WriteLine($"Successfully added {minionName} to be minion of {villianName}.");
-                    }
+                    Console.WriteLine($"Successfully added {minionName} to be minion of {villianName}.");
                 }
             }
         }
