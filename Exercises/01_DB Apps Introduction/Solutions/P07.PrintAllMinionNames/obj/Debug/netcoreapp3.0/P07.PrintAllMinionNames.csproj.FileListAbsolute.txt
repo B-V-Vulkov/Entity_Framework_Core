@@ -15,3 +15,4 @@ C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\01_DB Apps Introduction\Solutio
 C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\01_DB Apps Introduction\Solutions\P07.PrintAllMinionNames\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\01_DB Apps Introduction\Solutions\P07.PrintAllMinionNames\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\01_DB Apps Introduction\Solutions\P07.PrintAllMinionNames\obj\Debug\netcoreapp3.0\P07.PrintAllMinionNames.csproj.CopyComplete
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\01_DB Apps Introduction\Solutions\P07.PrintAllMinionNames\obj\Debug\netcoreapp3.0\P07.PrintAllMinionNames.csprojAssemblyReference.cache
