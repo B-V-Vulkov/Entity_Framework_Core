@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.ChangeTownNamesCasing",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.RemoveVillain", "P06.RemoveVillain\P06.RemoveVillain.csproj", "{5334F315-0328-465B-BB1A-150AA429835D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07.PrintAllMinionNames", "P07.PrintAllMinionNames\P07.PrintAllMinionNames.csproj", "{0CB2C1A7-AACD-4061-8B07-74E6F0B863E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{5334F315-0328-465B-BB1A-150AA429835D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5334F315-0328-465B-BB1A-150AA429835D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5334F315-0328-465B-BB1A-150AA429835D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CB2C1A7-AACD-4061-8B07-74E6F0B863E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB2C1A7-AACD-4061-8B07-74E6F0B863E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB2C1A7-AACD-4061-8B07-74E6F0B863E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB2C1A7-AACD-4061-8B07-74E6F0B863E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
