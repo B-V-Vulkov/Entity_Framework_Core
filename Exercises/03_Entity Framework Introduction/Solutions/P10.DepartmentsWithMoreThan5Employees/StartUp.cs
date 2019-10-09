@@ -38,7 +38,8 @@
                 })
                 .OrderBy(c => c.CountOfEmployees)
                 .ThenBy(d => d.DepartmentName)
-                .Take(5);
+                .Take(5)
+                .ToList();
 
             StringBuilder stringBuilder = new StringBuilder();
 
