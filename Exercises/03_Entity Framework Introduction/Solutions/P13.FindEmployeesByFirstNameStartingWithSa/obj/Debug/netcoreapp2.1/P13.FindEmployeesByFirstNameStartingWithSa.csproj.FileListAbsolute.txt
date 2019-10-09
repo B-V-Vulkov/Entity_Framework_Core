@@ -7,3 +7,4 @@ C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\03_Entity Framework Introductio
 C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\03_Entity Framework Introduction\Solutions\P13.FindEmployeesByFirstNameStartingWithSa\bin\Debug\netcoreapp2.1\P13.FindEmployeesByFirstNameStartingWithSa.pdb
 C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\03_Entity Framework Introduction\Solutions\P13.FindEmployeesByFirstNameStartingWithSa\obj\Debug\netcoreapp2.1\P13.FindEmployeesByFirstNameStartingWithSa.dll
 C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\03_Entity Framework Introduction\Solutions\P13.FindEmployeesByFirstNameStartingWithSa\obj\Debug\netcoreapp2.1\P13.FindEmployeesByFirstNameStartingWithSa.pdb
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\03_Entity Framework Introduction\Solutions\P13.FindEmployeesByFirstNameStartingWithSa\obj\Debug\netcoreapp2.1\P13.FindEmployeesByFirstNameStartingWithSa.csprojAssemblyReference.cache
