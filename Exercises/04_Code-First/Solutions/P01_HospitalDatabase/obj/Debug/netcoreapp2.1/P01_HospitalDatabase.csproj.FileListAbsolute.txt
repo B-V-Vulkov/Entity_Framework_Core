@@ -1,0 +1,10 @@
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P01_HospitalDatabase\bin\Debug\netcoreapp2.1\P01_HospitalDatabase.deps.json
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P01_HospitalDatabase\bin\Debug\netcoreapp2.1\P01_HospitalDatabase.runtimeconfig.json
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P01_HospitalDatabase\bin\Debug\netcoreapp2.1\P01_HospitalDatabase.runtimeconfig.dev.json
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P01_HospitalDatabase\bin\Debug\netcoreapp2.1\P01_HospitalDatabase.dll
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P01_HospitalDatabase\bin\Debug\netcoreapp2.1\P01_HospitalDatabase.pdb
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P01_HospitalDatabase\obj\Debug\netcoreapp2.1\P01_HospitalDatabase.csprojAssemblyReference.cache
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P01_HospitalDatabase\obj\Debug\netcoreapp2.1\P01_HospitalDatabase.AssemblyInfoInputs.cache
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P01_HospitalDatabase\obj\Debug\netcoreapp2.1\P01_HospitalDatabase.AssemblyInfo.cs
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P01_HospitalDatabase\obj\Debug\netcoreapp2.1\P01_HospitalDatabase.dll
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P01_HospitalDatabase\obj\Debug\netcoreapp2.1\P01_HospitalDatabase.pdb
