@@ -3,7 +3,6 @@ C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P03.Sal
 C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P03.SalesDatabase\bin\Debug\netcoreapp2.1\P03_SalesDatabase.runtimeconfig.dev.json
 C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P03.SalesDatabase\bin\Debug\netcoreapp2.1\P03_SalesDatabase.dll
 C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P03.SalesDatabase\bin\Debug\netcoreapp2.1\P03_SalesDatabase.pdb
-C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P03.SalesDatabase\obj\Debug\netcoreapp2.1\P03.SalesDatabase.csprojAssemblyReference.cache
 C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P03.SalesDatabase\obj\Debug\netcoreapp2.1\P03.SalesDatabase.AssemblyInfoInputs.cache
 C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P03.SalesDatabase\obj\Debug\netcoreapp2.1\P03.SalesDatabase.AssemblyInfo.cs
 C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P03.SalesDatabase\obj\Debug\netcoreapp2.1\P03_SalesDatabase.dll

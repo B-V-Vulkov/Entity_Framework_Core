@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.HospitalDatabaseModific
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.HospitalDatabase", "P01.HospitalDatabase\P01.HospitalDatabase.csproj", "{76290F7F-C55A-40B1-AD85-C7D42E386AAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.SalesDatabase", "P03.SalesDatabase\P03.SalesDatabase.csproj", "{DACBE1EC-E4CA-45E8-B894-E2785C800042}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.SalesDatabase", "P03.SalesDatabase\P03.SalesDatabase.csproj", "{DACBE1EC-E4CA-45E8-B894-E2785C800042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-5.Migrations", "P04-5.Migrations\P04-5.Migrations.csproj", "{E2383328-F8AC-4DCF-BAEA-33A1B265AA0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{DACBE1EC-E4CA-45E8-B894-E2785C800042}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DACBE1EC-E4CA-45E8-B894-E2785C800042}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DACBE1EC-E4CA-45E8-B894-E2785C800042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2383328-F8AC-4DCF-BAEA-33A1B265AA0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2383328-F8AC-4DCF-BAEA-33A1B265AA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2383328-F8AC-4DCF-BAEA-33A1B265AA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2383328-F8AC-4DCF-BAEA-33A1B265AA0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

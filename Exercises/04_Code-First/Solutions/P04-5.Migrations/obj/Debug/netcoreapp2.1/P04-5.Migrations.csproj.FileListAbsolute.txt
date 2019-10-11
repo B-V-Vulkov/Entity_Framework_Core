@@ -1,0 +1,9 @@
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P04-5.Migrations\bin\Debug\netcoreapp2.1\P04-5.Migrations.deps.json
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P04-5.Migrations\bin\Debug\netcoreapp2.1\P04-5.Migrations.runtimeconfig.json
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P04-5.Migrations\bin\Debug\netcoreapp2.1\P04-5.Migrations.runtimeconfig.dev.json
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P04-5.Migrations\bin\Debug\netcoreapp2.1\P04-5.Migrations.dll
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P04-5.Migrations\bin\Debug\netcoreapp2.1\P04-5.Migrations.pdb
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P04-5.Migrations\obj\Debug\netcoreapp2.1\P04-5.Migrations.AssemblyInfoInputs.cache
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P04-5.Migrations\obj\Debug\netcoreapp2.1\P04-5.Migrations.AssemblyInfo.cs
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P04-5.Migrations\obj\Debug\netcoreapp2.1\P04-5.Migrations.dll
+C:\SoftUni\C# DB\Entity_Framework_Core\Exercises\04_Code-First\Solutions\P04-5.Migrations\obj\Debug\netcoreapp2.1\P04-5.Migrations.pdb
