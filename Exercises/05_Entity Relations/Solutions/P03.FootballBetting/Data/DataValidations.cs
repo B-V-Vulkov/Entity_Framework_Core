@@ -11,14 +11,19 @@
             public const int InitialsMaxLength = 3;
         }
 
-        public static class Course
+        public static class Color
         {
-            public const int NameMaxLength = 80;
+            public const int NameMaxLength = 30;
         }
 
-        public static class Resource
+        public static class Town
         {
-            public const int NameMaxLength = 50;
+            public const int NameMaxLength = 30;
+        }
+
+        public static class Country
+        {
+            public const int NameMaxLength = 30;
         }
     }
 }

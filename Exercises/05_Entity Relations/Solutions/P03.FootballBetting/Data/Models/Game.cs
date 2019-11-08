@@ -28,7 +28,7 @@
         public string Result { get; set; }
 
         public ICollection<Player> PlayerStatistics { get; set; }
-             = new HashSet<Player>();
+            = new HashSet<Player>();
 
         public ICollection<Bet> Bets { get; set; }
             = new HashSet<Bet>();
