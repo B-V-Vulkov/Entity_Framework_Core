@@ -29,7 +29,8 @@
 
             student
                 .Property(pn => pn.PhoneNumber)
-                .HasColumnType(PhoneNumberType)
+                .HasMaxLength(PhoneNumberMaxLength)
+                .IsFixedLength()
                 .IsRequired(false);
         }
     }

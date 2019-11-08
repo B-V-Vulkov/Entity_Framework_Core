@@ -6,7 +6,7 @@
         {
             public const int NameMaxLength = 100;
 
-            public const string PhoneNumberType = "CHAR(10)";
+            public const int PhoneNumberMaxLength = 10;
         }
 
         public static class Course
