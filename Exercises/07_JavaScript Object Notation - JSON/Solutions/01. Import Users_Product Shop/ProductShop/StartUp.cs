@@ -18,7 +18,7 @@
 
             using (var context = new ProductShopContext())
             {
-                Console.WriteLine(GetSoldProducts(context));
+                Console.WriteLine(GetUsersWithProducts(context));
             }
         }
 
@@ -89,25 +89,83 @@
         public static string GetSoldProducts(ProductShopContext context)
         {
             var users = context.Users
-                .Where(u => u.ProductsSold.Count > 0)
+                .Where(u => u.ProductsSold.Any(ps => ps.BuyerId != null))
+                .OrderBy(u => u.LastName)
+                .ThenBy(u => u.FirstName)
                 .Select(u => new
                 {
                     firstName = u.FirstName,
                     lastName = u.LastName,
-                    soldProducts = u.ProductsSold.Select(sp => new
+                    soldProducts = u.ProductsSold
+                    .Where(ps => ps.BuyerId != null)
+                    .Select(ps => new
                     {
-                        name = sp.Name,
-                        price = sp.Price,
-                        buyerFirstName = sp.Buyer.FirstName,
-                        buyerLastName = sp.Buyer.LastName,
-                    })
-                    .ToList()
+                        name = ps.Name,
+                        price = ps.Price,
+                        buyerFirstName = ps.Buyer.FirstName,
+                        buyerLastName = ps.Buyer.LastName
+                    }).ToList()
                 })
-                .OrderBy(u => u.lastName)
-                .ThenBy(u => u.firstName)
                 .ToList();
 
             return JsonConvert.SerializeObject(users, Formatting.Indented);
+        }
+
+        //07.Export Categories By Products Count
+        public static string GetCategoriesByProductsCount(ProductShopContext context)
+        {
+            var categories = context.Categories
+                .Select(c => new
+                {
+                    category = c.Name,
+                    productsCount = c.CategoryProducts.Count,
+                    averagePrice = $"{c.CategoryProducts.Average(p => p.Product.Price):f2}",
+                    totalRevenue = $"{c.CategoryProducts.Sum(cp => cp.Product.Price):f2}"
+                })
+                .OrderByDescending(c => c.productsCount)
+                .ToList();
+
+                return JsonConvert.SerializeObject(categories, Formatting.Indented);
+        }
+
+        //08.Export Users and Products
+        public static string GetUsersWithProducts(ProductShopContext context)
+        {
+            var users = context.Users
+                .Where(u => u.ProductsSold.Any(p => p.Buyer != null))
+                .OrderByDescending(p => p.ProductsSold.Count(ps => ps.Buyer != null))
+                .Select(u => new
+                {
+                    firstName = u.FirstName,
+                    lastName = u.LastName,
+                    age = u.Age,
+                    soldProducts = new
+                    {
+                        count = u.ProductsSold.Count(p => p.Buyer != null),
+                        products = u.ProductsSold
+                        .Where(p => p.Buyer != null)
+                        .Select(p => new
+                        {
+                            name = p.Name,
+                            price = p.Price
+                        })
+                        .ToList()
+                    }
+                })
+                .ToList();
+
+            var usersOutut = new
+            {
+                usersCount = users.Count,
+                users = users,
+            };
+
+            return JsonConvert.SerializeObject(usersOutut, 
+                new JsonSerializerSettings()
+                {
+                    Formatting = Formatting.Indented,
+                    NullValueHandling = NullValueHandling.Ignore,
+                });
         }
     }
 }
