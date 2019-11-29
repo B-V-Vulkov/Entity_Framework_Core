@@ -16,7 +16,7 @@
 
             Mapper.Initialize(config => config.AddProfile<MusicHubProfile>());
 
-            ResetDatabase(context, shouldDropDatabase: true);
+            ResetDatabase(context, shouldDropDatabase: false);
 
             var projectDir = GetProjectDirectory();
             
@@ -32,19 +32,19 @@
         private static void ImportEntities(MusicHubDbContext context, string baseDir, string exportDir)
         {
             var writers = DataProcessor.Deserializer.ImportWriters(context,
-                    File.ReadAllText(baseDir + "Actual - ImportWriters.json"));
+                    File.ReadAllText(baseDir + "ImportWriters.json"));
             PrintAndExportEntityToFile(writers, exportDir + "ImportWriters.txt");
 
             var producerAlbums = DataProcessor.Deserializer.ImportProducersAlbums(context,
-                    File.ReadAllText(baseDir + "Actual - ImportProducersAlbums.json"));
+                    File.ReadAllText(baseDir + "ImportProducersAlbums.json"));
             PrintAndExportEntityToFile(producerAlbums, exportDir + "ImportProducersAlbums.txt");
 
             var songs = DataProcessor.Deserializer.ImportSongs(context, 
-                File.ReadAllText(baseDir + "Actual - ImportSongs.xml"));
+                File.ReadAllText(baseDir + "ImportSongs.xml"));
             PrintAndExportEntityToFile(songs, exportDir + "ImportSongs.txt");
 
             var performers = DataProcessor.Deserializer.ImportSongPerformers(context, 
-                File.ReadAllText(baseDir + "Actual - ImportSongPerformers.xml"));
+                File.ReadAllText(baseDir + "ImportSongPerformers.xml"));
             PrintAndExportEntityToFile(performers, exportDir + "ImportSongPerformers.txt");
         }
 
@@ -52,11 +52,11 @@
         {
             var jsonOutput = DataProcessor.Serializer.ExportAlbumsInfo(context, 9);
             Console.WriteLine(jsonOutput);
-            File.WriteAllText(exportDir + "Actual - AlbumsInfo.json", jsonOutput);
+            File.WriteAllText(exportDir + "AlbumsInfo.json", jsonOutput);
 
             var xmlOutput = DataProcessor.Serializer.ExportSongsAboveDuration(context, 4);
             Console.WriteLine(xmlOutput);
-            File.WriteAllText(exportDir + "Actual - SongsAboveDuration.xml", xmlOutput);
+            File.WriteAllText(exportDir + "SongsAboveDuration.xml", xmlOutput);
         }
 
         private static void ResetDatabase(MusicHubDbContext context, bool shouldDropDatabase = false)
