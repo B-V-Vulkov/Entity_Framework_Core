@@ -1,6 +1,5 @@
 ﻿namespace VaporStore.DataProcessor
 {
-
     using Newtonsoft.Json;
     using System;
     using System.Globalization;
@@ -12,6 +11,7 @@
     using Data;
     using Data.Models.Enumerations;
     using ExportDtos;
+    using System.Xml;
 
     public static class Serializer
 	{
@@ -41,51 +41,52 @@
                 .ThenBy(g => g.Id)
                 .ToList();
 
-            var result = JsonConvert.SerializeObject(genres, Formatting.Indented);
+            var result = JsonConvert.SerializeObject(genres, Newtonsoft.Json.Formatting.Indented);
 
             return result;
 		}
 
 		public static string ExportUserPurchasesByType(VaporStoreDbContext context, string storeType)
 		{
-            var typePurchases = Enum.Parse<PurchaseType>(storeType);
-
-            var users = context.Users
+            var storeTypeValue = Enum.Parse<PurchaseType>(storeType);
+            var purchases = context.Users
                 .Select(u => new ExportUserDto
                 {
                     Username = u.Username,
                     Purchases = u.Cards
-                    .Where(p => p.Purchases.Any(t => t.Type == typePurchases))
-                    .SelectMany(pp => pp.Purchases)
-                    .Select(p => new ExportPurchaseDto
-                    {
-                        Card = p.Card.Number,
-                        Cvc = p.Card.Cvc,
-                        Date = p.Date.ToString("yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture),
-                        Game = new ExportGameDto
+                        .SelectMany(c => c.Purchases)
+                        .Where(p => p.Type == storeTypeValue)
+                        .Select(p => new ExportPurchaseDto
                         {
-                            Genre = p.Game.Genre.Name,
-                            Price = p.Game.Price,
-                        }
-                    })
-                        .OrderBy(d => d.Date)
+                            Card = p.Card.Number,
+                            Cvc = p.Card.Cvc,
+                            Date = p.Date.ToString("yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture),
+                            Game = new ExportGameDto
+                            {
+                                Title = p.Game.Name,
+                                Genre = p.Game.Genre.Name,
+                                Price = p.Game.Price,
+                            }
+                        })
+                        .OrderBy(p => p.Date)
                         .ToArray(),
-                    TotalSpent = u.Cards.SelectMany(p => p.Purchases)
-                    .Sum(p => p.Game.Price),
+                    TotalSpent = u.Cards
+                        .SelectMany(c => c.Purchases)
+                        .Where(p => p.Type == storeTypeValue)
+                        .Sum(p => p.Game.Price)
                 })
-                .Where(p => p.Purchases.Any())
-                .OrderByDescending(t => t.TotalSpent)
+                .Where(u => u.Purchases.Any())
+                .OrderByDescending(u => u.TotalSpent)
                 .ThenBy(u => u.Username)
                 .ToArray();
 
-            var xmlSerializer = new XmlSerializer(typeof(ExportUserDto[]), new XmlRootAttribute("Users"));
+            var serializer = new XmlSerializer(typeof(ExportUserDto[]), new XmlRootAttribute("Users"));
 
-            var stringBuilder = new StringBuilder();
+            var sb = new StringBuilder();
+            var namespaces = new XmlSerializerNamespaces(new[] { new XmlQualifiedName("", "") });
+            serializer.Serialize(new StringWriter(sb), purchases, namespaces);
 
-            xmlSerializer.Serialize(new StringWriter(stringBuilder), users);
-
-            var result = stringBuilder.ToString().TrimEnd();
-
+            var result = sb.ToString();
             return result;
         }
 	}

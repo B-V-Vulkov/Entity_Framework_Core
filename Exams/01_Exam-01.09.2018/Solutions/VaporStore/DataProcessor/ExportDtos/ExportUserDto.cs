@@ -40,5 +40,8 @@
 
         [XmlElement("Price")]
         public decimal Price { get; set; }
+
+        [XmlAttribute("title")]
+        public string Title { get; set; }
     }
 }
