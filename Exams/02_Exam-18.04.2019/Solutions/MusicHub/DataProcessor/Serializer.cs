@@ -2,9 +2,13 @@
 {
     using System;
     using System.Globalization;
+    using System.IO;
     using System.Linq;
+    using System.Text;
+    using System.Xml;
     using System.Xml.Serialization;
     using Data;
+    using MusicHub.DataProcessor.ExportDtos;
     using Newtonsoft.Json;
 
     public class Serializer
@@ -32,14 +36,38 @@
                 .OrderByDescending(x => decimal.Parse(x.AlbumPrice))
                 .ToArray();
 
-            var result = JsonConvert.SerializeObject(albums, Formatting.Indented);
+            var result = JsonConvert.SerializeObject(albums, Newtonsoft.Json.Formatting.Indented);
 
             return result;
         }
 
         public static string ExportSongsAboveDuration(MusicHubDbContext context, int duration)
         {
-            throw new NotImplementedException();
+            var songs = context.Songs
+                .Where(x => x.Duration.TotalSeconds > duration)
+                .Select(s => new ExportSongDto
+                {
+                    SongName = s.Name,
+                    Writer = s.Writer.Name,
+                    Performer = s.SongPerformers.Select(p => p.Performer.FirstName + " " + p.Performer.LastName).FirstOrDefault(),
+                    AlbumProducer = s.Album.Producer.Name,
+                    Duration = s.Duration.ToString("c"),
+                })
+                .OrderBy(x => x.SongName)
+                .ThenBy(x => x.Writer)
+                .ToArray();
+
+            var xmlSerializer = new XmlSerializer(typeof(ExportSongDto[]), new XmlRootAttribute("Songs"));
+
+            var sb = new StringBuilder();
+
+            var namespaces = new XmlSerializerNamespaces(new[]
+            {
+                XmlQualifiedName.Empty,
+            });
+            xmlSerializer.Serialize(new StringWriter(sb), songs, namespaces);
+
+            return sb.ToString().TrimEnd();
         }
     }
 }
