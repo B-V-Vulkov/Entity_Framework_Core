@@ -18,7 +18,7 @@
 
         public bool IsInjured { get; set; }
 
-        public ICollection<Game> PlayerStatistics { get; set; }
-            = new HashSet<Game>();
+        public ICollection<PlayerStatistic> PlayerStatistics { get; set; }
+            = new HashSet<PlayerStatistic>();
     }
 }

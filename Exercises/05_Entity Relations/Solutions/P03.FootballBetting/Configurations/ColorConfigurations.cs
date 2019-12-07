@@ -16,8 +16,7 @@
             color
                 .Property(n => n.Name)
                 .HasMaxLength(NameMaxLength)
-                .IsRequired(true)
-                .IsUnicode(true);
+                .IsRequired(true);
         }
     }
 }

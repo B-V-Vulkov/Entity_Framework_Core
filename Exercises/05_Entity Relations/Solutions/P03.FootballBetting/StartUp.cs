@@ -1,6 +1,7 @@
 ﻿namespace P03_FootballBetting
 {
     using Microsoft.EntityFrameworkCore;
+    using System.Diagnostics;
 
     using Data;
 
@@ -8,9 +9,14 @@
     {
         public static void Main()
         {
-            using var db = new FootballBettingContext();
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            System.Console.WriteLine(stopWatch.Elapsed);
 
+            using var db = new FootballBettingContext();
             db.Database.Migrate();
+
+            System.Console.WriteLine(stopWatch.Elapsed);
         }
     }
 }
