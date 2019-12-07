@@ -3493,19 +3493,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vulko\\.nuget\\packages\\": {}
+    "C:\\Users\\Borislav_Vulkov\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\04_Code-First\\Solutions\\P04-5.Migrations\\P04-5.Migrations.csproj",
+      "projectUniqueName": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\04_Code First\\Solutions\\P04-5.Migrations\\P04-5.Migrations.csproj",
       "projectName": "P04-5.Migrations",
-      "projectPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\04_Code-First\\Solutions\\P04-5.Migrations\\P04-5.Migrations.csproj",
-      "packagesPath": "C:\\Users\\vulko\\.nuget\\packages\\",
-      "outputPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\04_Code-First\\Solutions\\P04-5.Migrations\\obj\\",
+      "projectPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\04_Code First\\Solutions\\P04-5.Migrations\\P04-5.Migrations.csproj",
+      "packagesPath": "C:\\Users\\Borislav_Vulkov\\.nuget\\packages\\",
+      "outputPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\04_Code First\\Solutions\\P04-5.Migrations\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vulko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Borislav_Vulkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

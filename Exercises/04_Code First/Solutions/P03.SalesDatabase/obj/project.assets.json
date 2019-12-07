@@ -3493,19 +3493,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vulko\\.nuget\\packages\\": {}
+    "C:\\Users\\Borislav_Vulkov\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\04_Code-First\\Solutions\\P03.SalesDatabase\\P03.SalesDatabase.csproj",
+      "projectUniqueName": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\04_Code First\\Solutions\\P03.SalesDatabase\\P03.SalesDatabase.csproj",
       "projectName": "P03_SalesDatabase",
-      "projectPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\04_Code-First\\Solutions\\P03.SalesDatabase\\P03.SalesDatabase.csproj",
-      "packagesPath": "C:\\Users\\vulko\\.nuget\\packages\\",
-      "outputPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\04_Code-First\\Solutions\\P03.SalesDatabase\\obj\\",
+      "projectPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\04_Code First\\Solutions\\P03.SalesDatabase\\P03.SalesDatabase.csproj",
+      "packagesPath": "C:\\Users\\Borislav_Vulkov\\.nuget\\packages\\",
+      "outputPath": "C:\\SoftUni\\C# DB\\Entity_Framework_Core\\Exercises\\04_Code First\\Solutions\\P03.SalesDatabase\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vulko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Borislav_Vulkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
